@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'SpaceGrotesk-Light';
+    src: url('../fonts/SpaceGrotesk/webfont/SpaceGrotesk-Light.woff') format('woff'), url('../fonts/SpaceGrotesk/ttf/SpaceGrotesk-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: lighter;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url('../fonts/SpaceGrotesk/webfont/SpaceGrotesk-Regular.woff') format('woff'), url('../fonts/SpaceGrotesk/ttf/SpaceGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Medium';
+    src: url('../fonts/SpaceGrotesk/webfont/SpaceGrotesk-Medium.woff') format('woff'), url('../fonts/SpaceGrotesk/ttf/SpaceGrotesk-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url('../fonts/SpaceGrotesk/webfont/SpaceGrotesk-Bold.woff') format('woff'), url('../fonts/SpaceGrotesk/ttf/SpaceGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+html {
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+body {
+    font-family: 'SpaceGrotesk-Regular';
+}
