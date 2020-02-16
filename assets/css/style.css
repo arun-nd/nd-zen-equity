@@ -1,35 +1,229 @@
 @font-face {
-    font-family: 'SpaceGrotesk-Light';
-    src: url('../fonts/SpaceGrotesk/webfont/SpaceGrotesk-Light.woff') format('woff'), url('../fonts/SpaceGrotesk/ttf/SpaceGrotesk-Light.ttf') format('truetype');
-    font-weight: lighter;
-    font-style: lighter;
-}
-
-@font-face {
-    font-family: 'SpaceGrotesk-Regular';
-    src: url('../fonts/SpaceGrotesk/webfont/SpaceGrotesk-Regular.woff') format('woff'), url('../fonts/SpaceGrotesk/ttf/SpaceGrotesk-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Space Grotesk Regular';
     font-style: normal;
+    font-weight: normal;
+    src: local('Space Grotesk Regular'), url('../fonts/SpaceGrotesk-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk-Medium';
-    src: url('../fonts/SpaceGrotesk/webfont/SpaceGrotesk-Medium.woff') format('woff'), url('../fonts/SpaceGrotesk/ttf/SpaceGrotesk-Medium.ttf') format('truetype');
-    font-weight: medium;
-    font-style: medium;
+    font-family: 'Space Grotesk Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Space Grotesk Light'), url('../fonts/SpaceGrotesk-Light.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'SpaceGrotesk-Bold';
-    src: url('../fonts/SpaceGrotesk/webfont/SpaceGrotesk-Bold.woff') format('woff'), url('../fonts/SpaceGrotesk/ttf/SpaceGrotesk-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: bold;
+    font-family: 'Space Grotesk Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Space Grotesk Medium'), url('../fonts/SpaceGrotesk-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Space Grotesk SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Space Grotesk SemiBold'), url('../fonts/SpaceGrotesk-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Space Grotesk Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Space Grotesk Bold'), url('../fonts/SpaceGrotesk-Bold.woff') format('woff');
 }
 
 html {
-    font-family: 'SpaceGrotesk-Regular';
+    font-family: 'Space Grotesk Regular';
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: #191919;
 }
 
-body {
-    font-family: 'SpaceGrotesk-Regular';
+.z-full-screen-occupy {
+    min-height: 100vh;
+    position: relative;
 }
+
+.z-brand {
+    font: Bold 14px/16px 'Space Grotesk Bold';
+    letter-spacing: 5.88px;
+}
+
+.z-nav {
+    font-family: 'Space Grotesk Medium';
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.67px;
+}
+
+.z-nav-btn {
+    font-family: 'Space Grotesk Medium';
+    font-weight: normal;
+    font-size: 16px/17px;
+    letter-spacing: 0.67px;
+    width: 158px;
+    background: rgba(101, 0, 255, 0.11) 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+}
+
+.z-v-l {
+    width: 1px;
+    height: 35px;
+    background-color: #6500FF;
+}
+
+.z-lg-title {
+    font: 91px/101px 'Space Grotesk Medium';
+    letter-spacing: 3.82px;
+}
+
+.z-md-title {
+    font: 32px/35px 'Space Grotesk Medium';
+    letter-spacing: 1.34px;
+}
+
+.z-sm-title-bold {
+    font: Bold 16px/34px 'Space Grotesk Bold';
+    letter-spacing: 0.67px;
+}
+
+.z-sm-blurb {
+    font: Medium 16px/34px 'Space Grotesk Medium';
+    letter-spacing: 0.67px;
+}
+
+.z-md-blurb {
+    font: 18px/34px 'Space Grotesk Medium';
+    letter-spacing: 0.76px;
+}
+
+.z-bordered-box-outer {
+    display: inline-block;
+    font: 16px/17px 'Space Grotesk Medium';
+    letter-spacing: 0.67px;
+    border: 1px solid #6500FF;
+    border-radius: 2px;
+    width: 242px;
+    height: 64px;
+}
+
+.z-bordered-box-inner {
+    display: inline-block;
+    border-left: 1px solid #6500ff;
+    border-right: 1px solid #6500ff;
+    width: 220px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+}
+
+.z-bg {
+    background-color: #6500FF;
+}
+
+.z-text-bg {
+    width: 964px;
+    height: 477px;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: -5rem;
+    background-image: url('../images/Z-text-bg.png');
+    background-size: 27px;
+    background-repeat: repeat;
+    z-index: 1;
+}
+
+.z-card-bg {
+    width: 1100px;
+    height: 508px;
+    border-radius: 8px;
+    background-color: white;
+    z-index: 0;
+    margin-top: 8rem;
+}
+
+.z-icon-circular-bg {
+    width: 32px;
+    height: 32px;
+    background-color: #6500FF;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.z-width-height {
+    width: 531px;
+    height: 582px;
+}
+
+
+/* Utilities list */
+
+.ml-4-5 {
+    margin-left: 4.5rem;
+}
+
+.mr-4-5 {
+    margin-right: 4.5rem;
+}
+
+.mt-4-6 {
+    margin-top: 4.6rem;
+}
+
+.ml-7 {
+    margin-left: 7rem;
+}
+
+.-mt-1 {
+    margin-top: -1rem;
+}
+
+.-mt-1-4 {
+    margin-top: -1.4rem;
+}
+
+.mb-2-5 {
+    margin-bottom: 2.5rem;
+}
+
+.-mt-50 {
+    margin-top: -50%;
+}
+
+.ml-32 {
+    margin-left: 32rem;
+}
+
+.ml-55p {
+    margin-left: 55%;
+}
+
+.ml-46p {
+    margin-left: 46%;
+}
+
+.ml-38 {
+    margin-left: 38rem;
+}
+
+.-mr-10 {
+    margin-right: -10rem;
+}
+
+.-mb-1-9 {
+    margin-bottom: -1.9rem;
+}
+
+.h-582 {
+    height: 582px;
+}
+
+.p-6 {
+    padding: 6rem;
+}
+
+
+/* Utilities list */
