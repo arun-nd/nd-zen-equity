@@ -1,0 +1,174 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    #break-sm {
+        display: none;
+    }
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #break-sm {
+        display: none;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 996px) and (max-width: 1024px) {
+    #break-sm {
+        display: none;
+    }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .z-lg-title {
+        font: 50px 'Space Grotesk Medium';
+    }
+    .z-text-bg,
+    .z-card-bg {
+        width: 100%;
+    }
+    .z-width-height {
+        width: 100%;
+        height: 100%;
+    }
+    .-mr-10 {
+        margin-right: 0rem;
+    }
+    .-mt-50 {
+        margin-top: 0rem;
+    }
+    #break {
+        display: none;
+    }
+    .p-6 {
+        padding: 2rem;
+    }
+    .z-sm-mb-5 {
+        margin-bottom: 5rem;
+    }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .z-lg-title {
+        font: 50px 'Space Grotesk Medium';
+    }
+    .z-text-bg,
+    .z-card-bg {
+        width: 100%;
+    }
+    .z-width-height {
+        width: 100%;
+        height: 100%;
+    }
+    .-mr-10 {
+        margin-right: 0rem;
+    }
+    .-mt-50 {
+        margin-top: 0rem;
+    }
+    #break {
+        display: none;
+    }
+    .p-6 {
+        padding: 2rem;
+    }
+    .z-sm-mb-5 {
+        margin-bottom: 5rem;
+    }
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .z-lg-title {
+        font: 50px 'Space Grotesk Medium';
+    }
+    .z-text-bg,
+    .z-card-bg {
+        width: 100%;
+    }
+    .z-width-height {
+        width: 100%;
+        height: 100%;
+    }
+    .-mr-10 {
+        margin-right: 0rem;
+    }
+    .-mt-50 {
+        margin-top: 0rem;
+    }
+    #break {
+        display: none;
+    }
+    .p-6 {
+        padding: 2rem;
+    }
+    .z-sm-mb-5 {
+        margin-bottom: 5rem;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .z-lg-title {
+        font: 50px 'Space Grotesk Medium';
+    }
+    .z-text-bg,
+    .z-card-bg {
+        width: 100%;
+    }
+    .z-width-height {
+        width: 100%;
+        height: 100%;
+    }
+    .-mr-10 {
+        margin-right: 0rem;
+    }
+    .-mt-50 {
+        margin-top: 0rem;
+    }
+    #break {
+        display: none;
+    }
+    .p-6 {
+        padding: 2rem;
+    }
+    .z-sm-mb-5 {
+        margin-bottom: 5rem;
+    }
+}
