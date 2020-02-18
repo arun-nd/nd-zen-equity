@@ -136,6 +136,12 @@
     .z-sm-mb-5 {
         margin-bottom: 5rem;
     }
+    #platform .ze-pf-feature{
+        padding-left: 0em;
+    }
+    #platform .ze-pf-title{
+        padding-left: 0em;
+    }
 }
 
 
@@ -170,5 +176,11 @@
     }
     .z-sm-mb-5 {
         margin-bottom: 5rem;
+    }
+    #platform .ze-pf-feature{
+        padding-left: 0em;
+    }
+    #platform .ze-pf-title{
+        padding-left: 0em;
     }
 }

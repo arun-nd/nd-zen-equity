@@ -33,73 +33,86 @@
     src: local('Space Grotesk Bold'), url('../fonts/SpaceGrotesk-Bold.woff') format('woff');
 }
 
-html {
+html, body {
     font-family: 'Space Grotesk Regular';
     background: #FFFFFF 0% 0% no-repeat padding-box;
     color: #191919;
+    scroll-behavior: smooth;
 }
 
-.z-full-screen-occupy {
+.ze-full-screen-occupy {
     min-height: 100vh;
     position: relative;
 }
 
-.z-brand {
+#header .ze-brand, #footer .ze-brand {
     font: Bold 14px/16px 'Space Grotesk Bold';
     letter-spacing: 5.88px;
+    color: #191919;
+    opacity: 1;
 }
 
-.z-nav {
+#header .ze-nav {
     font-family: 'Space Grotesk Medium';
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 0.67px;
 }
 
-.z-nav-btn {
+#header .ze-nav-btn {
     font-family: 'Space Grotesk Medium';
     font-weight: normal;
-    font-size: 16px/17px;
+    font-size: 16px;
     letter-spacing: 0.67px;
     width: 158px;
     background: rgba(101, 0, 255, 0.11) 0% 0% no-repeat padding-box;
     border-radius: 2px;
     display: inline-block;
     text-align: center;
+    color: #191919;
+    text-decoration: none !important;
 }
 
-.z-v-l {
+ .ze-v-l {
     width: 1px;
     height: 35px;
     background-color: #6500FF;
 }
 
-.z-lg-title {
+#home .ze-lg-title {
     font: 91px/101px 'Space Grotesk Medium';
     letter-spacing: 3.82px;
 }
 
-.z-md-title {
+#employee .ze-md-title, #platform .ze-md-title,  #company .ze-md-title,#connect .ze-md-title {
     font: 32px/35px 'Space Grotesk Medium';
     letter-spacing: 1.34px;
 }
 
-.z-sm-title-bold {
-    font: Bold 16px/34px 'Space Grotesk Bold';
+#employee .ze-sm-title-bold,#platform .ze-sm-title-bold, #company .ze-sm-title-bold  {
+    font: 16px/34px 'Space Grotesk Bold';
     letter-spacing: 0.67px;
 }
 
-.z-sm-blurb {
-    font: Medium 16px/34px 'Space Grotesk Medium';
+#employee .ze-sm-blurb, #platform .ze-sm-blurb, #company .ze-sm-blurb, #connect .ze-sm-blurb {
+    font: 16px/34px 'Space Grotesk Medium';
     letter-spacing: 0.67px;
 }
 
-.z-md-blurb {
+#employee .ze-md-blurb, #platform .ze-md-blurb {
     font: 18px/34px 'Space Grotesk Medium';
     letter-spacing: 0.76px;
 }
+#connect .ze-sm-blurb-2 {
+  font: 16px/34px 'Space Grotesk Regular';
+  letter-spacing: 0;
+}
+#home .ze-btn-link{
+  color: #191919;
+}
 
-.z-bordered-box-outer {
+
+.ze-bordered-box-outer {
     display: inline-block;
     font: 16px/17px 'Space Grotesk Medium';
     letter-spacing: 0.67px;
@@ -109,7 +122,7 @@ html {
     height: 64px;
 }
 
-.z-bordered-box-inner {
+#home .ze-bordered-box-inner {
     display: inline-block;
     border-left: 1px solid #6500ff;
     border-right: 1px solid #6500ff;
@@ -117,13 +130,15 @@ html {
     height: 62px;
     line-height: 62px;
     text-align: center;
+    color: #191919;
+    text-decoration: none !important;
 }
 
-.z-bg {
+.ze-bg {
     background-color: #6500FF;
 }
 
-.z-text-bg {
+.ze-text-bg {
     width: 964px;
     height: 477px;
     position: absolute;
@@ -135,7 +150,7 @@ html {
     z-index: 1;
 }
 
-.z-card-bg {
+#employee .ze-card-bg {
     width: 1100px;
     height: 508px;
     border-radius: 8px;
@@ -143,8 +158,11 @@ html {
     z-index: 0;
     margin-top: 8rem;
 }
+.ze-pb-12em {
+  padding-bottom: 12em;
+}
 
-.z-icon-circular-bg {
+#employee .ze-icon-circular-bg,#platform .ze-icon-circular-bg {
     width: 32px;
     height: 32px;
     background-color: #6500FF;
@@ -152,8 +170,17 @@ html {
     border-radius: 50%;
     text-align: center;
 }
+#company .ze-icon-circular-bg-2 {
+  width: 49px;
+  height: 49px;
+  background-color: #6500FF;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+}
 
-.z-width-height {
+
+#employee .ze-width-height {
     width: 531px;
     height: 582px;
 }
@@ -189,8 +216,8 @@ html {
     margin-bottom: 2.5rem;
 }
 
-.-mt-50 {
-    margin-top: -50%;
+#employee .-mt-53 {
+    margin-top: -53%;
 }
 
 .ml-32 {
@@ -209,7 +236,7 @@ html {
     margin-left: 38rem;
 }
 
-.-mr-10 {
+#employee .-mr-10 {
     margin-right: -10rem;
 }
 
@@ -224,6 +251,217 @@ html {
 .p-6 {
     padding: 6rem;
 }
+.pb-8em{
+  padding-bottom: 8em;
+}
+#platform .pl-2{
+  padding-left: 2em !important;
+}
+.h-349{
+  height: 349px;
+}
+.mt-6{
+  margin-top: 6em !important;
+}
+.pb-5em{
+  padding-bottom: 5em;
+}
+#connect .mt-8,#company .mt-8{
+  margin-top: 8px !important;
+}
+#company .pb-2em{
+  padding-bottom: 2em;
+}
+.pb-14em{
+  padding-bottom: 14em;
+}
+/* .text-dark:hover{
+  color: #6500FF !important;
+} */
+.active{
+  color: #6500FF !important;
+}
+#company .ze-c-header-title{
+  text-align: left;
+  /* font: Medium 32px/35px Space Grotesk; */
+  font-size: 32px;
+  letter-spacing: 1.34px;
+  color: #191919;
+  opacity: 1;
+}
+#company #owl-demo .item img{
+  display: block;
+  /* width: 100%; */
+  height: auto;
+}
+#company #owl-demo .item{
+  border: 1px solid #6500FF;
+  padding: 2em;
+  border-radius: 4px;
+}
+#company .ze-c-mb-2em {
+  margin-bottom: 2em;
+}
+#company .owl-pagination .owl-page span {
+  background-color:#6500FF;
+}
+#company .owl-pagination .owl-page .active span
+{
+  background-color:#6500FF;
+}
+#company .owl-theme .owl-controls {
+  text-align: left;
+}
+#company .ze-c-mb-1em{
+  margin-bottom: 1em;
+}
+#company .ze-name{
+  text-align: left;
+  font-family: 16px/20px 'Space Grotesk Medium';
+  letter-spacing: 0.67px;
+  color: #191919;
+  opacity: 1;
+  text-decoration: none !important;
+}
+#footer .ze-link, #header .ze-link{
+  text-align: right;
+  font: 16px/17px 'Space Grotesk Medium';
+  letter-spacing: 0.67px;
+  color: #191919;
+  opacity: 1;
+  text-decoration: none !important;
+}
+#footer .ze-pt-0{
+  padding-top: 0px;
+}
+#footer .ze-f-text-right{
+  direction: rtl;
+  text-align: justify;
+}
+#footer .ze-cr-title{
+  text-align: right;
+  font: 12px/13px 'Space Grotesk Regular';
+  letter-spacing: 0;
+  color: #191919;
+  opacity: 1;
+}
+#footer .ze-pr-0{
+  padding-right: 0px;
+}
+#footer .ze-pb-3em{
+  padding-bottom: 3em;
+}
+#footer .ze-pt-4em{
+  padding-top: 4em;
+}
+
+
+#connect .ze-c-header-title{
+  text-align: center;
+  font: 32px/35px 'Space Grotesk Medium';
+  letter-spacing: 1.34px;
+  color: #191919;
+  opacity: 1;
+}
+#connect .ze-c-sub-title{
+  text-align: center;
+  font: 16px/34px 'Space Grotesk Medium';
+  letter-spacing: 0.67px;
+  color: #191919;
+  opacity: 1;
+}
+
+#connect .ze-c-input{
+background: #FAF9FC 0% 0% no-repeat padding-box;
+border: 1px solid #6500FF;
+border-radius: 2px;
+opacity: 1;
+}
+#connect ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  text-align: left;
+  font: 16px/20px 'Space Grotesk Medium';
+  letter-spacing: 0.67px;
+  color: #191919;
+  opacity: 1;
+}
+
+#connect .btn.btn-icon, .btn.drp-icon {
+  width: 59px;
+  height: 59px;
+  padding: 10px 12px;
+}
+#connect .ze-btn-outline-theme {
+  color: #6500FF;
+  background-color: transparent;
+  background-image: none;
+  border-color:#6500FF;
+  box-shadow: none;
+}
+#connect .ze-btn-outline-theme:hover{
+  background-color: #6500FF;
+  color: white;
+}
+#connect .btn-rounded {
+  border-radius: 30px;
+}
+#connect .input-group-prepend {
+  margin-right: 0px;
+}
+#connect input{
+  border:none;
+  background-color: transparent;
+}
+#connect input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#connect .fa-user-circle-o{
+  color: gray;
+}
+
+#connect .input-group{
+  border: 1px #6500FF solid;
+  padding: 10px;
+}
+#connect .form-control{
+  border: 0;
+  box-shadow: none;
+}
+#connect .ze-c-theme-color{
+ color: #6500FF;
+}
+#connect .pb-4em{
+padding-bottom: 4em;
+}
+.ze-theme-bg{
+  background-color: #FAF9FC;
+}
+.ze-f-b-theme{
+  border-top: 1px solid #6500FF;
+  border-bottom: 1px solid #6500FF;
+}
+
+#company .widgets_div {
+  display: flex;
+  align-items: center;
+}
+
+#company .widgets_div .icon_div {
+  display: inline;
+}
+
+#company .widgets_div .icon_div span i {
+  font-size: 24px;
+}
+
+#company .widgets_div .text_div {
+  display: inline;
+  margin-left: 10px;
+}
+
 
 
 /* Utilities list */
